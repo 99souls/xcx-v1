@@ -10,6 +10,8 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 // waits for 'ready' then following code
 client.once("ready", () => {
   console.log("bot is ready");
+  // setting presence (activity + status)
+  client.user.setPresence({ activities: [{ name: "with ur heart" }], status: "dnd" });
 });
 
 // log in to discord using client's token
