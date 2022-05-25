@@ -1,8 +1,8 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 
 module.exports = {
-  data: new SlashCommandBuilder().setName("user").setDescription("gives user info"),
-  async execute(interaction) {
-    await interaction.reply(await interaction.reply(`Your tag: ${interaction.user.tag}\nYour id: ${interaction.user.id}`));
-  },
+    data: new SlashCommandBuilder().setName("user").setDescription("gives user info"),
+    async execute(interaction) {
+        await interaction.reply(await interaction.reply(`Your tag: ${interaction.user.tag}\nYour id: ${interaction.user.id}`));
+    },
 };
