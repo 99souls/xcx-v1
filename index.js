@@ -16,3 +16,6 @@ client.once("ready", () => {
 
 // log in to discord using client's token
 client.login(token);
+
+const sent = await interaction.reply({ content: "Pinging...", fetchReply: true });
+interaction.editReply(`Roundtrip latency: ${sent.createdTimestamp - interaction.createdTimestamp}ms`);
