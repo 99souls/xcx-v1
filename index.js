@@ -14,3 +14,4 @@ client.once("ready", () => {
 
 // log in to discord using client's token
 client.login(token);
+console.log("bot is logged in");
